@@ -15,12 +15,10 @@ Including another URLconf
 """
 from django.contrib import admin
 from django.urls import path
-from list.views import deleteItems, addItems, deleteItems, todoList
+from list.views import index
 
 urlpatterns = [
-    path('admin/', admin.site.urls),
-    path('list/', todoList),
-    path('addItem/', addItems),
-    path('deleteItem/<int:i>/', deleteItems)
-    
+    path(r'admin/', admin.site.urls),
+    path(r'', index, name='Items'),
+
 ]
