@@ -21,9 +21,21 @@ To run the application in terminal:
 4. Run following command to start the server
 '$ python manage.py runserver'
 
+TO USE APPLICATION
+
 Open development server http://127.0.0.1:8000/ by cmd+click to use the application.
+
+To enter a task:
+ - Enter to-do Task AND select a due date
+ - Click +ADD TASK
+
+To remove a completed task:
+ - check the task as completed
+ - Click DELETE TASKS
+
 Go to http://127.0.0.1:8000/admin to access django administration 
 
 Guest login info:
  - Username: guest_user
  - Password: Guest135
+
