@@ -12,13 +12,13 @@ def index(request):
             date = str(request.POST["date"]) 
             content = title + " -- " + date
             s = Items(title=title, content=content, due_date=date)
-            s.save() 
+            s.save() #save to database
             return redirect("/") #reloading page
         
         if "taskDelete" in request.POST: #checking if there is a request to delete a todo
             checkedlist = request.POST["checkedbox"] 
             y = Items.objects.get(id=checkedlist)
-            y.delete()
+            y.delete() #remove from db
         else:
             return redirect("/")
         
