@@ -4,13 +4,14 @@ from django.utils import timezone
 # Create your models here.
 # represents each item on the to do list
 
-class Items(models.Model): #Todolist able name that inherits models.Model
+class Items(models.Model): 
     title = models.CharField(max_length=250, default="Create Task")    
-    content = models.TextField(blank=True) # a text field 
-    created = models.DateField(default=timezone.now().strftime("%Y-%m-%d")) # a date
-
+    content = models.TextField(blank=True)
+    created = models.DateField(default=timezone.now().strftime("%Y-%m-%d"))
+    due_date = models.DateField(default=timezone.now().strftime("%Y-%m-%d"))
+    
     class Meta:
-        ordering = ["-created"] #ordering by the created field
+        ordering = ["-created"] 
     
     def __str__(self):
         return self.title
