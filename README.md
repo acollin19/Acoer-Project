@@ -1,5 +1,5 @@
 # Acoer-Project (Coderbyte)
-Task is to create a to do list application that persists the data in a database of my choosing using python and django. The features must include:
+Task is to create a to do list application that persists the data in a database of my choosing (SQLite3) using python and django. The features must include:
 - Adding new entries
 - Marking entries as completed
 - Deleting entries
@@ -11,9 +11,9 @@ $ git clone git@github.com:acollin19/Acoer-Project.git
 $ pipenv shell
 $ python manage.py runserver
 
-Open development server at http://127.0.0.1:8000/ by cmd+click to use the application.
-Go to http://127.0.0.1:8000/admin to access django administration for database.
+Open development server http://127.0.0.1:8000/ by cmd+click to use the application.
+Go to http://127.0.0.1:8000/admin to access django administration 
 
-Guest login to use from /admin
-Username: angeleparkcollin
-Password: AcoerAssessment
+Guest login info:
+ - Username: guest_user
+ - Password: Guest135
